@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SignalStack tracks real news links, markets, AI updates, and startup opportunities." />
+  <meta name="keywords" content="SignalStack, market briefing, AI news, startup news, stock market tracker, business intelligence, news terminal" />
+  <meta name="author" content="SignalStack" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="SignalStack News Terminal" />
+  <meta property="og:description" content="A live-style market and news intelligence terminal tracking business, AI, startup, and market signals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neevthakkar.github.io/SignalStack-News-Terminal/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SignalStack News Terminal" />
+  <meta name="twitter:description" content="Track real news links, markets, AI updates, and startup opportunities in a dense terminal interface." />
+  <title>SignalStack News Terminal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#" aria-label="SignalStack home">SignalStack</a>
+
+      <nav class="nav-tabs" aria-label="Signal filters">
+        <button class="nav-tab is-active" type="button" data-category="all">Home</button>
+        <button class="nav-tab" type="button" data-category="world">World</button>
+        <button class="nav-tab" type="button" data-category="markets">Markets</button>
+        <button class="nav-tab" type="button" data-category="ai">AI</button>
+        <button class="nav-tab" type="button" data-category="startup">Startups</button>
+      </nav>
+
+      <label class="search-shell">
+        <span aria-hidden="true">⌕</span>
+        <span class="sr-only">Search real news and market signals</span>
+        <input id="searchInput" type="search" placeholder="Search symbols, topics, sources" autocomplete="off" />
+      </label>
+
+      <div class="top-actions">
+        <button id="refreshBtn" class="icon-btn" type="button" title="Refresh live data" aria-label="Refresh live data">↻</button>
+        <button id="alertsBtn" class="icon-btn" type="button" title="Alert preferences" aria-label="Alert preferences">⚙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="terminal-shell">
+    <section class="briefing-head">
+      <div>
+        <p class="eyebrow">Live intelligence terminal</p>
+        <h1>Your Market Briefing</h1>
+        <p id="dateLine" class="date-line">Loading live session...</p>
+      </div>
+      <div class="status-cluster">
+        <span id="backendStatus" class="status-pill">Connecting</span>
+        <span id="lastUpdated" class="status-pill">--</span>
+      </div>
+    </section>
+
+    <section class="metrics-grid" aria-label="Briefing metrics">
+      <article>
+        <span>Real news links</span>
+        <strong id="articleCount">0</strong>
+      </article>
+      <article>
+        <span>High signals</span>
+        <strong id="highCount">0</strong>
+      </article>
+      <article>
+        <span>Markets tracked</span>
+        <strong id="marketCount">0</strong>
+      </article>
+      <article>
+        <span>Alerts</span>
+        <strong id="alertStatus">Off</strong>
+      </article>
+    </section>
+
+    <div class="layout-grid">
+      <section class="panel top-stories">
+        <div class="panel-title">
+          <h2>Top stories</h2>
+          <span id="sourceBadge">RSS + Yahoo</span>
+        </div>
+        <div id="featuredStory" class="featured-story skeleton"></div>
+        <div id="storyList" class="story-list"></div>
+      </section>
+
+      <aside class="side-stack">
+        <section class="panel market-pulse">
+          <div class="panel-title">
+            <h2>Market pulse</h2>
+            <span id="marketProvider">Yahoo Finance</span>
+          </div>
+          <div class="pulse-main">
+            <div>
+              <span class="label">Direction</span>
+              <strong id="marketMood">Loading</strong>
+              <p id="marketSubtext">Fetching quotes...</p>
+            </div>
+            <div class="pulse-ring" aria-hidden="true"><span id="pulseScore">--</span></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Watchlist</h2>
+            <span>Live</span>
+          </div>
+          <div id="marketList" class="market-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Picks for you</h2>
+            <span>Opportunity lens</span>
+          </div>
+          <div id="picksList" class="picks-list"></div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <div id="alertsModal" class="modal" hidden>
+    <form id="alertsForm" class="modal-card">
+      <button id="closeModal" class="close-btn" type="button" aria-label="Close">×</button>
+      <p class="eyebrow">Notification rules</p>
+      <h2>Alert Preferences</h2>
+      <p class="modal-copy">Saved locally for now. The next production step is connecting this to WhatsApp Cloud API or Twilio plus email.</p>
+      <label>
+        Email
+        <input id="emailInput" type="email" placeholder="you@example.com" autocomplete="email" />
+      </label>
+      <label>
+        WhatsApp
+        <input id="whatsappInput" type="tel" placeholder="+91 98765 43210" autocomplete="tel" />
+      </label>
+      <label class="check-row">
+        <input id="enableAlertsInput" type="checkbox" />
+        Enable high-signal alerts
+      </label>
+      <button class="primary-btn" type="submit">Save preferences</button>
+      <p id="formStatus" class="form-status" role="status"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
