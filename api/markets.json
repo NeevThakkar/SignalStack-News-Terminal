@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-06-21T10:09:43.739Z",
+  "markets": [
+    {
+      "symbol": "^NSEI",
+      "label": "Nifty 50",
+      "type": "Index",
+      "exchange": "NSI",
+      "currency": "INR",
+      "price": 24013.1,
+      "previous": 23853.9,
+      "change": 159.1999999999971,
+      "changePercent": 0.6673961071355086,
+      "marketTime": "2026-06-19T10:01:09Z"
+    },
+    {
+      "symbol": "^BSESN",
+      "label": "Sensex",
+      "type": "Index",
+      "exchange": "BSE",
+      "currency": "INR",
+      "price": 76802.9,
+      "previous": 76264.33,
+      "change": 538.5699999999924,
+      "changePercent": 0.7061885943271151,
+      "marketTime": "2026-06-19T10:00:59Z"
+    },
+    {
+      "symbol": "^GSPC",
+      "label": "S&P 500",
+      "type": "Index",
+      "exchange": "SNP",
+      "currency": "USD",
+      "price": 7500.58,
+      "previous": 7394.3,
+      "change": 106.27999999999975,
+      "changePercent": 1.4373233436565969,
+      "marketTime": "2026-06-18T20:42:06Z"
+    },
+    {
+      "symbol": "^IXIC",
+      "label": "Nasdaq",
+      "type": "Index",
+      "exchange": "NIM",
+      "currency": "USD",
+      "price": 26517.932,
+      "previous": 25809.66,
+      "change": 708.2720000000008,
+      "changePercent": 2.7442128257404432,
+      "marketTime": "2026-06-18T21:15:59Z"
+    },
+    {
+      "symbol": "BTC-USD",
+      "label": "Bitcoin",
+      "type": "Crypto",
+      "exchange": "CCC",
+      "currency": "USD",
+      "price": 64169.01,
+      "previous": 64418.445,
+      "change": -249.43499999999767,
+      "changePercent": -0.38721052642608444,
+      "marketTime": "2026-06-21T10:09:37Z"
+    },
+    {
+      "symbol": "ETH-USD",
+      "label": "Ethereum",
+      "type": "Crypto",
+      "exchange": "CCC",
+      "currency": "USD",
+      "price": 1731.2,
+      "previous": 1747.8855,
+      "change": -16.685500000000047,
+      "changePercent": -0.9546105851899365,
+      "marketTime": "2026-06-21T10:09:30Z"
+    },
+    {
+      "symbol": "CL=F",
+      "label": "Crude Oil",
+      "type": "Commodity",
+      "exchange": "NYM",
+      "currency": "USD",
+      "price": 76.54,
+      "previous": 80.75,
+      "change": -4.209999999999994,
+      "changePercent": -5.2136222910216645,
+      "marketTime": "2026-06-19T16:59:58Z"
+    },
+    {
+      "symbol": "GC=F",
+      "label": "Gold",
+      "type": "Commodity",
+      "exchange": "CMX",
+      "currency": "USD",
+      "price": 4172.9,
+      "previous": 4328,
+      "change": -155.10000000000036,
+      "changePercent": -3.5836414048059235,
+      "marketTime": "2026-06-19T16:59:56Z"
+    },
+    {
+      "symbol": "USDINR=X",
+      "label": "USD/INR",
+      "type": "FX",
+      "exchange": "CCY",
+      "currency": "INR",
+      "price": 94.31,
+      "previous": 95.1103,
+      "change": -0.8002999999999929,
+      "changePercent": -0.8414440917545134,
+      "marketTime": "2026-06-19T22:48:51Z"
+    }
+  ],
+  "errors": [],
+  "provider": "Yahoo Finance chart endpoint",
+  "cached": true
+}
