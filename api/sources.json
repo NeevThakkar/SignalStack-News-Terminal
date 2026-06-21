@@ -1,0 +1,209 @@
+{
+  "generatedAt": "2026-06-21T10:09:44.468Z",
+  "rankingModel": {
+    "version": "signalstack-rank-v2",
+    "factors": [
+      "recency: newer stories score higher, decaying across 48 hours",
+      "sourceTier: established publishers and specialist market/tech sources get more weight",
+      "categoryPriority: markets, business, AI, and startups are boosted for SignalStack's opportunity lens",
+      "impactKeywords: war, rates, inflation, funding, regulation, IPO, oil, and market-shock terms add urgency",
+      "crossSourceCluster: similar headlines across multiple sources get a corroboration boost"
+    ]
+  },
+  "feeds": [
+    {
+      "provider": "BBC",
+      "category": "world",
+      "label": "World",
+      "tier": 9,
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+    },
+    {
+      "provider": "BBC",
+      "category": "business",
+      "label": "Business",
+      "tier": 9,
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml"
+    },
+    {
+      "provider": "BBC",
+      "category": "technology",
+      "label": "Technology",
+      "tier": 9,
+      "url": "https://feeds.bbci.co.uk/news/technology/rss.xml"
+    },
+    {
+      "provider": "The Guardian",
+      "category": "world",
+      "label": "World",
+      "tier": 8,
+      "url": "https://www.theguardian.com/world/rss"
+    },
+    {
+      "provider": "The Guardian",
+      "category": "business",
+      "label": "Business",
+      "tier": 8,
+      "url": "https://www.theguardian.com/business/rss"
+    },
+    {
+      "provider": "The Guardian",
+      "category": "technology",
+      "label": "Technology",
+      "tier": 8,
+      "url": "https://www.theguardian.com/technology/rss"
+    },
+    {
+      "provider": "The New York Times",
+      "category": "world",
+      "label": "World",
+      "tier": 9,
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    },
+    {
+      "provider": "The New York Times",
+      "category": "business",
+      "label": "Business",
+      "tier": 9,
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+    },
+    {
+      "provider": "The New York Times",
+      "category": "technology",
+      "label": "Technology",
+      "tier": 9,
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+    },
+    {
+      "provider": "Al Jazeera",
+      "category": "world",
+      "label": "World",
+      "tier": 8,
+      "url": "https://www.aljazeera.com/xml/rss/all.xml"
+    },
+    {
+      "provider": "NPR",
+      "category": "world",
+      "label": "World",
+      "tier": 7,
+      "url": "https://feeds.npr.org/1001/rss.xml"
+    },
+    {
+      "provider": "NPR",
+      "category": "business",
+      "label": "Business",
+      "tier": 7,
+      "url": "https://feeds.npr.org/1006/rss.xml"
+    },
+    {
+      "provider": "CNBC",
+      "category": "business",
+      "label": "Business",
+      "tier": 8,
+      "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+    },
+    {
+      "provider": "CNBC",
+      "category": "markets",
+      "label": "Markets",
+      "tier": 8,
+      "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "provider": "MarketWatch",
+      "category": "markets",
+      "label": "Markets",
+      "tier": 7,
+      "url": "https://www.marketwatch.com/rss/topstories"
+    },
+    {
+      "provider": "TechCrunch",
+      "category": "startup",
+      "label": "Startups",
+      "tier": 7,
+      "url": "https://techcrunch.com/feed/"
+    },
+    {
+      "provider": "VentureBeat",
+      "category": "ai",
+      "label": "AI",
+      "tier": 7,
+      "url": "https://venturebeat.com/feed/"
+    },
+    {
+      "provider": "The Verge",
+      "category": "technology",
+      "label": "Technology",
+      "tier": 7,
+      "url": "https://www.theverge.com/rss/index.xml"
+    },
+    {
+      "provider": "Google News",
+      "category": "markets",
+      "label": "Markets",
+      "tier": 6,
+      "url": "https://news.google.com/rss/search?q=stock%20market%20OR%20economy%20OR%20business&hl=en-IN&gl=IN&ceid=IN:en"
+    },
+    {
+      "provider": "Google News",
+      "category": "ai",
+      "label": "AI",
+      "tier": 6,
+      "url": "https://news.google.com/rss/search?q=artificial%20intelligence%20OR%20OpenAI%20OR%20AI%20startup&hl=en-IN&gl=IN&ceid=IN:en"
+    },
+    {
+      "provider": "Google News",
+      "category": "startup",
+      "label": "Startups",
+      "tier": 6,
+      "url": "https://news.google.com/rss/search?q=startup%20funding%20India%20OR%20venture%20capital%20startup&hl=en-IN&gl=IN&ceid=IN:en"
+    }
+  ],
+  "markets": [
+    {
+      "symbol": "^NSEI",
+      "label": "Nifty 50",
+      "type": "Index"
+    },
+    {
+      "symbol": "^BSESN",
+      "label": "Sensex",
+      "type": "Index"
+    },
+    {
+      "symbol": "^GSPC",
+      "label": "S&P 500",
+      "type": "Index"
+    },
+    {
+      "symbol": "^IXIC",
+      "label": "Nasdaq",
+      "type": "Index"
+    },
+    {
+      "symbol": "BTC-USD",
+      "label": "Bitcoin",
+      "type": "Crypto"
+    },
+    {
+      "symbol": "ETH-USD",
+      "label": "Ethereum",
+      "type": "Crypto"
+    },
+    {
+      "symbol": "CL=F",
+      "label": "Crude Oil",
+      "type": "Commodity"
+    },
+    {
+      "symbol": "GC=F",
+      "label": "Gold",
+      "type": "Commodity"
+    },
+    {
+      "symbol": "USDINR=X",
+      "label": "USD/INR",
+      "type": "FX"
+    }
+  ]
+}
