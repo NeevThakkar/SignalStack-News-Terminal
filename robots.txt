@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neevthakkar.github.io/SignalStack-News-Terminal/sitemap.xml
